@@ -78,7 +78,8 @@ def get_numbers(label, count):
 
 # ----- math helpers -----
 
-def do_divide(a, b):
+def safe_divide(a, b):
+    """Low-level division helper used by apply() and do_divide()."""
     if b == 0:
         raise ZeroDivisionError("Can't divide by zero.")
     return a / b
@@ -94,7 +95,7 @@ def apply(a, op, b):
     if op == '+': return a + b
     if op == '-': return a - b
     if op == '*': return a * b
-    if op == '/': return do_divide(a, b)
+    if op == '/': return safe_divide(a, b)
 
 
 def evaluate(numbers, ops):
@@ -186,7 +187,7 @@ def do_divide():
     nums = get_numbers("divide", count)
     result = nums[0]
     for n in nums[1:]:
-        result = do_divide(result, n)
+        result = safe_divide(result, n)  # fixed: was do_divide(result, n)
     expr = " / ".join(fmt(n) for n in nums)
     show(expr, result)
     save(expr, result)
