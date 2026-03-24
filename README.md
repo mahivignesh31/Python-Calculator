@@ -14,6 +14,12 @@ A command-line calculator built in Python that supports basic and advanced math 
 
 - Python 3.x
 - No external libraries needed (uses built-in `math` and `os` only)
+## Contributors
+
+* [Mahi](https://github.com/mahivignesh31/)
+* [Bibhushit Shrestha](https://github.com/Bibhushit-UBA)
+
+
 
 ## How to Run
 
