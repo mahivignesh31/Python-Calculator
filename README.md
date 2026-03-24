@@ -6,7 +6,6 @@ A command-line calculator built in Python that supports basic and advanced math 
 
 - **Basic operations** — Add, Subtract, Multiply, Divide, Modulus
 - **Multi-number support** — Add or multiply 3, 4, 5... as many numbers as you want at once
-- **Chain calculation** — Mix different operators in one expression (e.g. `5 + 3 * 2 - 1`) with correct precedence
 - **Advanced operations** — Power, Square Root, Logarithm (base 10, natural, custom), Trigonometry (sin/cos/tan), Factorial
 - **Step-by-step breakdown** — Chain mode shows each calculation step
 - **History** — View your last 10 calculations or clear them anytime
@@ -26,23 +25,6 @@ python "Python Calculator.py"
 
 When you run the script, a menu appears with all available operations. Just enter the number for the operation you want, then follow the prompts to enter your numbers.
 
-**Example — Chain calculation:**
-```
-How many numbers? 4
-1st number: 10
-Operator: +
-2nd number: 5
-Operator: *
-3rd number: 3
-Operator: -
-4th number: 2
-
-Steps:
-1. 5 * 3 = 15
-2. 10 + 15 = 25
-3. 25 - 2 = 23
-
-Result: 23
 ```
 
 ## Operations Menu
