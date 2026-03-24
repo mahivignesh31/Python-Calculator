@@ -40,7 +40,7 @@ When you run the script, a menu appears with all available operations. Just ente
 | 3   | Multiply      |
 | 4   | Divide        |
 | 5   | Modulus       |
-| 6   | Chain Calc    |
+| 6   | Chain calculation |
 | 7   | Power         |
 | 8   | Square Root   |
 | 9   | Logarithm     |
